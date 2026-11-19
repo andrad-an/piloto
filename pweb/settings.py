@@ -126,3 +126,9 @@ MAILERS = {
         'BACKEND': 'django.core.mail.backends.console.EmailBackend',
     },
 }
+DEBUG = False
+
+ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
+LANGUAGE_CODE = 'pt-br'
+
+TIME_ZONE = 'America/Fortaleza'
