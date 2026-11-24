@@ -11,6 +11,10 @@
     <a href="{% url 'sobre' %}">Sobre</a> |
     <a href="{% url 'contato' %}">Contato</a> |
     <a href="{% url 'ajuda' %}">Ajuda</a>
+    <a href="{% url 'ajuda' %}">Ajuda</a> |
+    <a href="{% url 'diasemana' dia=1 %}">Dia da Semana</a> |
+    <a href="{% url 'perfil' usuario='Ana' %}">Perfil</a> |
+    <a href="{% url 'exibir_item' id=1 %}">Item</a>
 
     {% block conteudo %}
         Conteúdo do template
