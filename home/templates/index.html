@@ -2,7 +2,8 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Página Principal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block titulo %} Título do template {% endblock %}</title>
 </head>
 <body>
     <nav>
@@ -11,6 +12,9 @@
         <a href="{% url 'contato' %}">Contato</a> |
         <a href="{% url 'ajuda' %}">Ajuda</a>
     </nav>
-    <h1>Página Principal</h1>
+
+    {% block conteudo %}
+        Conteúdo do template
+    {% endblock %}
 </body>
 </html>
